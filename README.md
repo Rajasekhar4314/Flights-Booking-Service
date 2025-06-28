@@ -46,7 +46,7 @@ npm i sequelize-cli    => install cli
 
 cd src/                => go to src directory and install next step.
 
-npx sequelize init
+npx sequelize init      => will create a model, migrations, seed modules inside src directory.
 ```
 
 - By executing the above command you will get migrations and seeders folder along with a config.json inside the config folder.

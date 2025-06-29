@@ -3,13 +3,14 @@ const express = require("express");
 
 const router = express.Router();
 
-const { InfoController } = require("../../controllers/index")
+const bookingRoutes = require("./booking-routes")
 
-// router.get("/info", (req, res) => {
-//     return res.json({msg : "Ok"})
-// })
-// http://localhost:3000/v1/info/
-router.get("/info", InfoController.info)
+router.get("/info", (req, res) => {
+    return res.json({msg : "Ok"})
+})
+
+
+router.use("/bookings", bookingRoutes)
 
 
 module.exports = router;
